@@ -1,0 +1,58 @@
+<div class="nsw-oeh-beachwatch-popup">
+    <h4>{{title}}</h4>
+    <div class="row">
+        <div class="alert-box info-box">
+            <span class="fa-stack fa-3x">
+                <i class="info-icon fa fa-circle fa-stack-2x text-{{advice-color}}"></i>
+                <i class="info-icon oc-swimming fa-stack-1x fa-inverse"></i>
+            </span>
+            <br>
+            <span class="text-{{advice-color}} box-label">Pollution is {{advice}}</span>
+        </div>
+        <div class="temp-box info-box">
+            <span class="ocean-temp">
+                {{oceanTemp}}&deg;C
+            </span>
+            <br>
+            <span>Water Temp</span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <table class="table table-condensed table-striped">
+                <tbody>
+                    <tr>
+                        <td class="key">Patrolled</td>
+                        <td>{{patrolInfo}}</td>
+                    </tr>
+
+                    <tr>
+                        <td class="key">Swell</td>
+                        <td>{{swell}}</td>
+                    </tr>
+
+                    <tr>
+                        <td class="key">High tide</td>
+                        <td>{{highTide}}</td>
+                    </tr>
+
+                    <tr>
+                        <td class="key">Low tide</td>
+                        <td>{{lowTide}}</td>
+                    </tr>
+
+                    <tr>
+                        <td class="key">Last Updated</td>
+                        <td>
+                            {{current-as-of-ago}}<br>
+                            <small>({{current-as-of}})</small>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="attribution">
+        <span><small>Based on information from <a target="_blank" href="http://www.environment.nsw.gov.au/topics/water/beaches">NSW OEH Beachwatch</a></small></span>
+    </div>
+</div>

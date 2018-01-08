@@ -1,0 +1,34 @@
+{
+  "name": "@beyondtracks/mapbox-gl-nsw-oeh-beachwatech",
+  "version": "1.0.0",
+  "description": "A NSW OEH Beachwatch Layer for Mapbox GL",
+  "main": "index.js",
+  "author": "Andrew Harvey <andrew@alantgeo.com.au>",
+  "license": "MIT",
+  "repository": "github:beyondtracks/mapbox-gl-nsw-oeh-beachwatech",
+  "scripts": {
+    "start": "budo debug.js --live -- -t browserify-handlebars -t brfs",
+    "build": "mkdir -p dist && browserify --standalone MapboxGLNSWOEHBeachwatch index.js | uglifyjs -c -m > dist/mapbox-gl-nsw-oeh-beachwatch.min.js",
+    "lint": "eslint lib"
+  },
+  "dependencies": {
+    "@turf/bbox": "^5.1.5",
+    "async": "^2.6.0",
+    "bootstrap": "4.0.0-beta.3",
+    "font-awesome": "^4.7.0",
+    "handlebars": "^4.0.11",
+    "moment": "^2.20.1",
+    "osmic": "gitlab:gmgeo/osmic",
+    "xtend": "^4.0.1"
+  },
+  "devDependencies": {
+    "brfs": "1.4.3",
+    "browserify": "^13.0.1",
+    "browserify-handlebars": "^1.0.0",
+    "budo": "^9.2.1",
+    "eslint": "^3.10.0",
+    "insert-css": "2.0.0",
+    "mapbox-gl": "0.43.0",
+    "uglify-js": "^2.6.4"
+  }
+}

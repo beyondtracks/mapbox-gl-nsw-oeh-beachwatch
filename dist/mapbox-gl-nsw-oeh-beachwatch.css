@@ -1,0 +1,51 @@
+.mapboxgl-popup-content {
+    box-shadow: 0 3px 14px rgba(0,0,0,0.4);
+    color: #333;
+    border-radius: 12px;
+}
+
+.nsw-oeh-beachwatch-popup {
+    line-height: 1.0;
+    max-width: 300px;
+}
+.nsw-oeh-beachwatch-popup h4 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.nsw-oeh-beachwatch-popup .info-box {
+    text-align: center;
+    padding: 10px;
+}
+
+/* put one box on the left and one on the right */
+.nsw-oeh-beachwatch-popup .alert-box {
+    width: 50%;
+    float: left;
+}
+.nsw-oeh-beachwatch-popup .temp-box {
+    width: 50%;
+    float: right;
+}
+
+.ocean-temp {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* text-value for the info-box's */
+.nsw-oeh-beachwatch-popup .box-label {
+    font-weight: bold;
+    font-size: 125%;
+}
+
+/* properties table */
+.nsw-oeh-beachwatch-popup .key {
+    font-weight: bold;
+}
+.nsw-oeh-beachwatch-popup .key:after {
+    content: ": ";
+}
+.nsw-rfsoeh-beachwatchpopup .attribution {
+    text-align: center;
+}
